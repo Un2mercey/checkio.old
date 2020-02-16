@@ -1,0 +1,320 @@
+* {
+    background: transparent;
+}
+
+body {
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: monospace;
+    background-color: #caebfc !important;
+    background: no-repeat 100% url('img/wallpaper.png');
+    background-position: right 50vh;
+    background-size: 25%;
+}
+
+/* 
+* images 
+*/
+img.img-of-page {
+    width: calc(13vw + 13vh);
+}
+img.img-of-page-large {
+    width: calc(20vw + 20vh);
+}
+img.img-of-page.margin {
+    margin-left: 13vh;
+    margin-top: 10vh;
+}
+img.info-icon {
+    width: 33px;
+}
+img.icon-delete{
+    width: 50px;
+}
+img.icon {
+    width: 32px;
+    margin-left: 5px;
+}
+
+/*
+* texts
+*/
+.welcome {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    font-size: 160px;
+    font-weight: bold;
+    color: #fcc688;
+    text-shadow: 10px 0px #603912;
+}
+.title-of-page {
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fcc688;
+    text-shadow: 10px 0px #603912;
+}
+.body-of-page {
+    padding-top: 2vh;
+    color: #fcc688;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px #603912;
+}
+.middle-side.description {
+    margin: 10px;
+}
+li.dog{
+    font-size: 45px;
+    color: #3b0150;
+    text-shadow: 0px 6px #fcc688;
+}
+
+/*
+* panels
+*/
+.middle-side {
+    width: 96%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px;
+    padding-bottom: 10px;
+}
+.middle-side.visible {
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+    height: 120px;
+}
+.side-double {
+    width: 48%;
+}
+.side-triple {
+    width: 32%;
+}
+.side-12 {
+    width: 12%;
+}
+.side-88 {
+    width: 88%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.panel-span {
+    width: 20vw;
+    display: inline-block;
+    height: 15vh;
+}
+.last {
+    padding-bottom: 100px;
+}
+.margin-left {
+    margin: 0 !important;
+    margin-left: 10px !important;
+}
+.margin-right-70{
+    margin-right: 70px;
+}
+.absolute-left-17{
+    position: absolute;
+    left: 17vw;
+}
+
+/*
+* menu
+*/
+.app-menu {
+    float: left;
+    position: absolute;
+    width: calc(13vw + 13vh);
+    top: calc(45vh - 30px);
+    font-size: 12px !important;
+}
+.app-menu-content {
+    font-size: 14px;
+    text-align: left;
+    text-shadow: 0 0;
+    color: #8170CD;
+}
+.app-menu-content:hover {
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+a.item {
+    color: #8170CD;
+}
+a.item:hover {
+    color: #A554DF;
+    text-decoration: none;
+}
+
+/*
+* elememts
+*/
+.answer-div{
+    font-size: 105px;
+    text-shadow: 13px 0px chartreuse;
+    color: cadetblue;
+}
+.answer-span {
+    font-size: 75px;
+    text-shadow: 5px 0px chartreuse;
+    color: cadetblue;
+}
+.button-area {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/*
+*buttons
+*/
+.btn-grad{
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white !important;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: block;
+}
+.btn-grad:hover{
+    letter-spacing: -1px;
+    color: white !important;
+    background-position: right center; 
+}
+.side-btn {
+    height: 35px;
+    background: #fcc688;
+    font-size: 13px;
+    text-shadow: 0 0;
+    color: #603912;
+}
+.btn.disp-unset {
+    display: unset;
+}
+.btn.xs {
+    width: 50px;
+}
+.btn.md {
+    width: 200px;
+}
+.btn.lg{
+    width: 275px;
+}
+.btn-create{
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%);
+}
+.btn-calc {
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC 51%, #FC354C 100%);
+}
+.btn-clear {
+    background-image: linear-gradient(to right, #f857a6 0%, #ff5858 51%, #f857a6 100%);
+}
+.btn-clear.block {
+    width: -moz-available;
+    margin-left: 0;
+}
+.btn-fill {
+    background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 51%, #ddd6f3 100%);
+}
+.btn-full-fill {
+    background-image: linear-gradient(to right, #B993D6 0%, #8CA6DB 51%, #B993D6 100%);
+}
+.btn-random {
+    background-image: linear-gradient(to right, #FEAC5E 0%, #C779D0 51%, #FEAC5E 100%);
+}
+
+/*
+* inputs
+*/
+input.side-input {
+    width: 75px;
+    background: linear-gradient(to top, #9aebfc, #caebfc);
+    border: 0px solid #fcc688;
+    height: 50px;
+    color: #fcc688;
+    text-shadow: 4px 4px #603912;
+    text-align: center;
+    font-size: 50px;
+}
+input.side-input:hover{
+    border: 2px solid #ea38fd;
+}
+input.xlg {
+    height: 65px !important;
+    width: 50vw !important;
+}
+input.grid-input {
+    border: 0.5px solid;
+    width: 3vw;
+    height: 3vw;
+    margin: 0.5px;
+    text-align: center;
+    font-size: 2vw;
+    background: linear-gradient(to top, #FFAFBD, #ffc3a0);
+    border-color: #fcc688;
+    color: #000C40;
+}
+input.grid-input.s {
+    background: radial-gradient(#faf3ff, #397978);
+    color: #397978;
+    border: 2px solid;
+}
+input.grid-input.m {
+    background: radial-gradient(#faf3ff, #3498db);
+    color: #3498db;
+    border: 2px solid;
+}
+input.grid-input.c {
+    background: radial-gradient(#a8c0ff, #3f2b96);
+    color: #3f2b96;
+    border: 2px solid;
+}
+input.grid-input.y {
+    background: radial-gradient(#fffbd5, #b20a2c);
+    color: #b20a2c;
+    border: 4px double #0f3443;
+}
+input.grid-input.number-sign {
+    background: linear-gradient(to top, #ffc3a0, #fd746c, #FFAFBD);
+}
+input.grid-input.border-top {
+    border-top: 1.5px solid #74ee15;
+}
+input.grid-input.border-bottom {
+    border-bottom: 1.5px solid #74ee15;
+}
+input.grid-input.border-left {
+    border-left: 1.5px solid #ffe700;
+}
+input.grid-input.border-right {
+    border-right: 1.5px solid #ffe700;
+}
+input.grid-input.inner {
+    background: linear-gradient(#BAEB0B, #ffe700, #BAEB0B);;
+}
+
+/*
+* canvas
+*/
+#wild-dogs-canvas {
+    width: 400px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 40px;
+}
+
+/*
+* icons https://icons8.com/icon/pack/free-icons/nolan
+*/
