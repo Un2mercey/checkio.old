@@ -5,51 +5,34 @@
     <meta charset="utf-8" />
     <title>CheckIO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--bootstrap CSS-->
     <link rel="stylesheet" href="src/bootstrap/bootstrap.min.css">
-    <!--theme-->
     <link rel="stylesheet" href="themes/theme.css">
-    <!--Angular 1.4.5-->
     <script src="src/angularjs/angular.min.js"></script>
     <script src="src/angularjs/angular-route.min.js"></script>
-    <!-- jQuery-->
     <script src="src/jQuery/jquery-3.3.1.js"></script>
-    <!--bootstrap JS-->
     <script src="src/bootstrap/bootstrap.min.js"></script>
-    <!--js-->
-    <script type="text/javascript" src="app.js"></script>
-    <script src="pages/mainPage/MainController.js"></script>
-    <script src="pages/directives/groundForTheHouse/groundForTheHouse.directive.js"></script>
-    <script src="pages/directives/groundForTheHouse/groundForTheHouseController.js"></script>
-    <script src="pages/directives/mostNumbers/mostNumbers.directive.js"></script>
-    <script src="pages/directives/mostNumbers/mostNumbersController.js"></script>
-    <script src="pages/directives/navigation/navigation.directive.js"></script>
-    <script src="pages/directives/navigation/navigationController.js"></script>
-    <script src="pages/directives/theStoneWall/theStoneWall.directive.js"></script>
-    <script src="pages/directives/theStoneWall/theStoneWallController.js"></script>
-    <script src="pages/directives/wildDogs/wildDogs.directive.js"></script>
-    <script src="pages/directives/wildDogs/wildDogsController.js"></script>
-
+    <script src="app.js"></script>
+    <script src="pages//ground-for-the-house/groundForTheHouseController.js"></script>
+    <script src="pages/most-numbers/mostNumbersController.js"></script>
+    <script src="pages/navigation/navigationController.js"></script>
+    <script src="pages/the-stone-wall/theStoneWallController.js"></script>
+    <script src="pages/wild-dogs/wildDogsController.js"></script>
+    <base href="/">
 </head>
 
-<body ng-controller="MainController">
+<body ng-controller="MainPageController">
     <div class="app-menu">
         <ul>
             <li class="app-menu-content" ng-repeat="task in listOfDirectives track by $index">
                 <a class="app-menu-content item" href="{{task.page}}">
                     <img class="info-icon" src="themes/img/icons/info-icon.png">
                 </a>
-                <a class="app-menu-content item" ng-click="changeDirective($index)">{{task.name}}</a>
+                <a class="app-menu-content item" ng-click="changeDirective($index)" href="{{task.url}}">{{task.name}}</a>
             </li>
         </ul>
     </div>
     <div class="welcome" ng-if="!activeDirective">{{welcomeText}}</div>
-
-    <ground-for-the-house ng-if="activeDirective == 'ground-for-the-house'"></ground-for-the-house>
-    <most-numbers ng-if="activeDirective == 'most-numbers'"></most-numbers>
-    <navigation ng-if="activeDirective == 'navigation'"></navigation>
-    <the-stone-wall ng-if="activeDirective == 'the-stone-wall'"></the-stone-wall>
-    <wild-dogs ng-if="activeDirective == 'wild-dogs'"></wild-dogs>
+    <div ng-view></div>
 </body>
 
 </html>

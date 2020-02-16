@@ -1,7 +1,8 @@
-function NavigationController($scope) {
-    /*
-    *variables
-    */
+function NavigationController($scope, $routeParams) {
+    /**
+     *variables
+     */
+    $scope.params = $routeParams;
     $scope.answer = null;
     $scope.seaMapWidth = null;
     $scope.seaMapHeight = null;
@@ -16,9 +17,9 @@ function NavigationController($scope) {
         s: []
     };
 
-    /*
-    *methods
-    */
+    /**
+     *methods
+     */
     var getRandomIntInclusive = (min, max) => {
         min = Math.ceil(min);
         max = Math.floor(max);

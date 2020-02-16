@@ -1,7 +1,7 @@
-function WildDogsController($scope) {
-    /*
-    * variables
-    */
+function WildDogsController($scope, $routeParams) {
+    /**
+     * variables
+     */
     $scope.xDogCoord = null;
     $scope.yDogCoord = null;
     $scope.dogs = [];
@@ -10,8 +10,9 @@ function WildDogsController($scope) {
     var ctx = canvas[0].getContext('2d');
     $scope.test = 0;
     $scope.testResult = 0;
+    $scope.params = $routeParams;
 
-    /*
+    /**
     * methods
     */
     var createСoordinatePlane = () => {

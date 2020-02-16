@@ -1,6 +1,6 @@
-function GroundForTheHouseController($scope) {
+function GroundForTheHouseController($scope, $routeParams) {
     /*
-     *variables
+     *letiables
      */
     $scope.answer = null;
     $scope.areaWidth = null;
@@ -8,21 +8,21 @@ function GroundForTheHouseController($scope) {
     $scope.area = [];
     $scope.description = "Set '0' and '#' => then";
     $scope.fillDisabled = true;
-
+    $scope.params = $routeParams;
     /*
      *methods
      */
-    var getRandomIntInclusive = (min, max) => {
+    let getRandomIntInclusive = (min, max) => {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
 
-    var getRandomI = () => {
+    let getRandomI = () => {
         return getRandomIntInclusive(0, $scope.area.length - 1);
     }
 
-    var getRandomJ = () => {
+    let getRandomJ = () => {
         return getRandomIntInclusive(0, $scope.area[0].length - 1);
     }
 
@@ -107,7 +107,7 @@ function GroundForTheHouseController($scope) {
     $scope.calculateArea = (fill) => {
         $scope.fillDisabled = false;
         $scope.answer = null;
-        var house = [],
+        let house = [],
             xTopLeft = null,
             yTopLeft = null,
             xBottomRight = null,
@@ -144,8 +144,8 @@ function GroundForTheHouseController($scope) {
         }
     };
 
-    var paintGround = (xTopLeft, yTopLeft, xBottomRight, yBottomRight, fill) => {
-        var xTopRight = xBottomRight,
+    let paintGround = (xTopLeft, yTopLeft, xBottomRight, yBottomRight, fill) => {
+        let xTopRight = xBottomRight,
             yTopRight = yTopLeft,
             xBottomLeft = xTopLeft,
             yBottomLeft = yBottomRight;

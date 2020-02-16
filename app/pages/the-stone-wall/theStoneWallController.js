@@ -1,16 +1,17 @@
-function TheStoneWallController($scope) {
-    /*
-    *variables
-    */
+function TheStoneWallController($scope, $routeParams) {
+    /** 
+     *variables
+     */
+    $scope.params = $routeParams;
     $scope.answer = null;
     $scope.wallWidth = null;
     $scope.wallHeight = null;
     $scope.wall = [];
     $scope.description = "Set 0 and # then ";
 
-    /*
-    *methods
-    */
+    /**
+     *methods
+     */
     var getRandomIntInclusive = (min, max) => {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -140,15 +141,6 @@ function TheStoneWallController($scope) {
             $scope.answer = 'In this wall need more crack\'s';
         };
     };
-    /* if you see wall
-        {
-            if (i == $scope.wall.length - 1) savedCoords.push([i, j]);
-            else {
-                if (savedCoords[savedCoords.length - 1] !== undefined && 
-                    savedCoords[savedCoords.length - 1][0] - i == 1) savedCoords.push([i, j]);
-            };
-        };
-    */ 
 };
 
 appControllers.controller('TheStoneWallController', TheStoneWallController);

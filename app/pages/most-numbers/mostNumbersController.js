@@ -1,9 +1,9 @@
-function MostNumbersController($scope) {
+function MostNumbersController($scope, $routeParams) {
     /*
      *variables
      */
     $scope.answer;
-
+    $scope.params = $routeParams;
     /*
      *methods
      */
