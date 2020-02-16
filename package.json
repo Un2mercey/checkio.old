@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "My Project",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engine": "node >=0.6.x",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "app",
+  "license": "UNLICENSED",
+  "homepage": "http:///",
+  "devDependencies": {}
+}
