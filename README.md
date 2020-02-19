@@ -1,2 +1,2 @@
 # CheckIO
-resolving tasks from checkio
+resolving tasks from https://js.checkio.org/
